@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel Giriş </title>
+    </h:head>
+    <h:body>
+
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h:form>
+                    <!-- Example row of columns -->
+                    <div class="row col-lg-12">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">Personel Giriş-Çıkış İşlemi</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class=" col-lg-4">
+                                        <div class="panel panel-primary  ">
+                                            <div class="panel-heading ">Kart Numarası</div>
+                                            <div class="panel-body">
+                                                <div class="input-group">
+                                                    <h:inputText value="#{personelGirisCikis.kartNo}" class=" input-lg form-control btn-danger  ">
+                                                    </h:inputText>
+                                                    <div class="input-group-btn">
+                                                        <h:commandButton class="btn btn-lg btn-warning " action="#{personelGirisCikis.kartOkut()}" value="Okut"/>
+                                                    </div><!-- /btn-group -->
+
+                                                </div><!-- /input-group -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading ">Personel Bilgileri</div>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">Ad Soyad</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.adsoyad}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">Personel No</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.perid}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">Çalıştığı Bölüm:</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.kurumAdi}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">Mesai No:</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.mesaiID}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">Mesai Plan Notu:</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.mesaiPlanNot}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-12">İş Başlangıç Saat</label>
+                                                    <div class="col-lg-12 ">
+                                                        <h:outputLabel   value="#{personelGirisCikis.isBaslangicSaat}"   class="form-control btn-default"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading ">Bilgilendirme</div>
+                                            <div class="panel-body">
+                                                <h:outputLabel value=" #{personelGirisCikis.bilgilendirmeMesaji}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-lg-12">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">Personel Giriş-Çıkış Geçmişi</div>
+                            <div class="panel-body btn-danger ">
+                                <h:dataTable styleClass="table " value="#{anaSayfaBean.girisCikisListele()}" var="girisCikisList"   >
+                                    <h:column>
+                                        <f:facet name="header">Ad Soyad</f:facet>
+                                            #{girisCikisList.adsoyad}
+                                    </h:column>
+
+                                    <h:column >
+                                        <f:facet  class="success" name="header">Giriş</f:facet>
+                                            #{girisCikisList.girisTarih}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet  class="active " name="header"> Çıkış</f:facet>    
+                                            #{girisCikisList.cikiTarih}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Mesai Programi</f:facet>
+                                            #{girisCikisList.mesaiAdi}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Personel No</f:facet>
+                                            #{girisCikisList.perid}
+                                    </h:column>
+
+
+
+                                </h:dataTable> 
+
+
+                            </div></div></div>
+                </h:form>
+            </div>
+
+        </div>
+    </h:body>
+</html>
+

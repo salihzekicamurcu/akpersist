@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+
+    
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel Yonetim Sistemi Server Sayfası</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <b:navBar brand="Ana Ekran"  brandHref="index.xhtml"  inverse="true" fixed="top">  
+                <b:navbarLinks>
+                    <b:dropMenu value="Personel İşlemleri">
+                        <b:navLink value="Yeni Personel Kayıt İşlemi" href="Personel_islemleri/kayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="Personel_islemleri/PersonelHareketKayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel İzin Girişi" href="Personel_islemleri/Personel_izin.xhtml"></b:navLink>
+                        <b:navLink value="Personel Muhasebe İşlemleri" href="Personel_islemleri/PersonelMaasHesaplama.xhtml"></b:navLink>
+                        <b:navLink value="İşten Çıkarma-Geri Alma" href="Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Personel Sorgulama" href="Personel_islemleri/PersonelSorgula.xhtml"></b:navLink>
+                        <b:navLink value="Personel Düzenleme" href="Personel_islemleri/PersonelDuzenle.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu İşlemler">
+                        <b:navLink value="Toplu Hareket İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Toplu İzin İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="Toplu_Islemler/MesaiKayit.xhtml"></b:navLink>
+                        <b:navLink value="Maaş Artırımı Kesinti" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink  value="Mesai Programı Oluştur" href="Toplu_Islemler/MesaiPlaniOlusturma.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu Mail İşlemleri">
+                        <b:navLink value="Departmana Mail At" href="#"></b:navLink>
+                        <b:navLink value="Tüm Kuruma Mail At" href="#"></b:navLink>
+                        <b:navLink value="Mail Grubu Oluştur" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Kişiye Özel Mail" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu  value="Raporlar">
+                        <b:navLink header="Personel Raporları"></b:navLink>
+                        <b:navLink value="Manyetik Kart Listesi"  href="Raporlar/ManyetikKartListeleri.xhtml"></b:navLink>
+                        <b:navLink value="Personel İletişim Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Kurum Departman Bölüm Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Personel Servis Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel Özlük Bilgileri Listesi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink value="Personele Özel Maaş Extresi" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Giriş Çıkış Raporları"></b:navLink>
+                        <b:navLink value="Giriş Yapan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Gelmeyen Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Mesaiye Kalan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Aktif Çalışan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Çalışmayan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Haftalık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="İzin Raporları"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Genel Tanımlar">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Yedekleme">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Sistem Menu">
+                        <b:navLink value="Çıkış" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                </b:navbarLinks>
+            </b:navBar>
+        </h:form>
+        <div class="jumbotron">
+            <div class="container">
+                <h:form>           
+                    <div class="row col-lg-12">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">Personel Giriş-Çıkış Geçmişi</div>
+                            <div class="panel-body">
+                                <div class="col-lg-8">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading ">
+                                            <div class="input-group">
+                                                <div class=" col-lg-4">
+                                                    Gün:  <h:selectOneMenu value="#{anaSayfaBean.gun}" id="gun"  class="form-control btn-default active" >
+
+                                                        <f:selectItems class="form-control btn-default" value="#{anaSayfaBean.gunler}" var="tar"
+                                                                       itemValue="#{tar.toString()}" itemLabel="#{tar.toString()}" >
+                                                        </f:selectItems>
+
+                                                    </h:selectOneMenu>
+                                                </div>
+                                                <div class=" col-lg-4">
+                                                    Ay:<h:selectOneMenu value="#{anaSayfaBean.ay}" id="ay" class="form-control btn-default" >
+
+                                                        <f:selectItems class="form-control btn-default" value="#{anaSayfaBean.aylar}" var="tar_ay"
+                                                                       itemValue="#{tar_ay.toString()}" itemLabel="#{tar_ay.toString()}
+
+                                                                       " >
+                                                        </f:selectItems>
+
+                                                    </h:selectOneMenu>
+                                                </div>
+                                                <div class=" col-lg-4">
+                                                    Yıl: <h:selectOneMenu value="#{anaSayfaBean.yil}"  class="form-control btn-default " >
+
+                                                        <f:selectItems class="form-control btn-default" value="#{anaSayfaBean.yillar}" var="tar_yil"
+                                                                       itemValue="#{tar_yil.toString()}" itemLabel="#{tar_yil.toString()}" >
+                                                        </f:selectItems>
+
+                                                    </h:selectOneMenu>
+                                                </div>
+                                                <div class="input-group-btn btn-sm">
+                                                    <button type="button" class="btn  btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Listele <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                        <li><h:commandButton class="form-control btn-sm btn-default" action="#{anaSayfaBean.girisCikisListele}" value="Günlük Liste"/></li>
+                                                        <li><h:commandButton class="form-control btn-sm btn-default" action="#{anaSayfaBean.girisCikisAra(anaSayfaBean.gun,anaSayfaBean.ay, anaSayfaBean.yil)}"  value="Tarihe Göre Ara"/></li>
+                                                    </ul>
+                                                </div><!-- /btn-group -->
+                                            </div><!-- /input-group -->
+                                        </div>
+                                        <div class="panel-body btn-default">
+                                            <h:dataTable styleClass="table table-hover" value="#{anaSayfaBean.girisCikisListesi}" var="girisCikisList"   >
+                                                <h:column>
+                                                    <f:facet name="header">Ad Soyad</f:facet>
+                                                        #{girisCikisList.adsoyad}
+                                                </h:column>
+
+                                                <h:column >
+                                                    <f:facet  class="success" name="header">Giriş</f:facet>
+                                                        #{girisCikisList.girisTarih}
+                                                </h:column>
+                                                <h:column>
+                                                    <f:facet  class="active " name="header"> Çıkış</f:facet>    
+                                                        #{girisCikisList.cikiTarih}
+                                                </h:column>
+                                                <h:column>
+                                                    <f:facet name="header">Mesai Programi</f:facet>
+                                                        #{girisCikisList.mesaiAdi}
+                                                </h:column>
+                                                <h:column>
+                                                    <f:facet name="header">Personel No</f:facet>
+                                                        #{girisCikisList.perid}
+                                                </h:column>
+
+
+
+                                            </h:dataTable> 
+
+                                            <h:outputLabel value="#{anaSayfaBean.bilgilendirmeMesaji}"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="panel panel-primary ">
+                                        <div class="panel-heading ">İzinli Personel
+                                            <div class="input-group">
+                                                <h:inputText  value="#{personelIzinIslemleri.aranan}" class="form-control btn-default" />
+                                                <div class="input-group-btn btn-sm">
+                                                    <button type="button" class="btn  btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Menu <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                        <li><h:commandButton class="form-control btn-sm btn-default " action="#{personelIzinIslemleri.personelAra(personelIzinIslemleri.aranan)}" value=" Personel No İle Ara"/></li>
+                                                        <li><h:commandButton class="form-control btn-sm btn-default"  action="#{personelIzinIslemleri.gunlukIzinliPersonel}" value="Bugun İzinli Personel"/></li>
+                                                        <li><h:commandButton class="form-control btn-sm btn-default"  action="#{personelIzinIslemleri.tariheGoreIzinliPersonel}"  value="Tarihe Göre Ara"/></li>
+                                                    </ul>
+                                                </div><!-- /btn-group -->
+                                            </div><!-- /input-group -->
+                                        </div>
+                                        <div class="panel-body ">
+                                            <div class="table-responsive">
+                                                <h:dataTable styleClass="table table-hover " value="#{personelIzinIslemleri.personelIzinListesi}" var="personelIzinListesi"   >
+                                                    <h:column>
+                                                        <f:facet  class="active " name="header"> Personel No</f:facet>    
+                                                            #{personelIzinListesi.perID}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  class="success" name="header">Ad Soyad</f:facet>
+                                                            #{personelIzinListesi.adsoyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Başlangıç</f:facet>
+                                                            #{personelIzinListesi.izinBaslangic}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Bitiş</f:facet>
+                                                            #{personelIzinListesi.izinBitis}
+                                                    </h:column>
+                                                </h:dataTable> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div></div>
+                    <div class="row col-lg-12">
+                        <div class="panel panel-warning ">
+                            <div class="panel-heading ">Bilgilendirme</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class=" col-lg-6">
+                                        <div class="panel panel-primary  ">
+                                            <div class="panel-heading ">Kart Listesi
+                                                <div class="input-group">
+                                                    <h:inputText  value="#{manyetikKartListesi.aranan}" class="form-control btn-default" />
+                                                    <div class="input-group-btn btn-sm">
+                                                        <button type="button" class="btn  btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Menu <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            <li><h:commandButton class="form-control btn-sm btn-default"  
+                                                                                 action="#{manyetikKartListesi.verilenManyetikKartlariAraListele(manyetikKartListesi.aranan)}" 
+                                                                                 value="Personel Numarasına Göre Arama" /></li>
+                                                            <li><h:commandButton class="form-control btn-sm btn-default"
+                                                                                 action="#{manyetikKartListesi.verilenManyetikKartlariAraListeleKartNo(manyetikKartListesi.aranan)}"
+                                                                                 value="Kart Numarasına Göre Arama"/></li>
+                                                            <li><h:commandButton class="form-control btn-sm btn"
+                                                                                 action="#{manyetikKartListesi.kullanilanManyetikKartlariListele()}" 
+                                                                                 value="Kullanılan Manyetik Kartları Listele"/></li>
+                                                            <li><h:commandButton class="form-control btn-sm btn-primary"
+                                                                                 action="#{manyetikKartListesi.verilenManyetikKartlariListele()}" 
+                                                                                 value="Tüm Kartları Listele"/></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="col-lg-12">
+                                                    <div class="table-responsive">
+                                                        <h:dataTable styleClass="table table-striped table-hover table-condensed" value="#{manyetikKartListesi.manyetlikKartListe}" var="manyetikKartList"   >
+                                                            <h:column>
+                                                                <f:facet name="header">Kart No</f:facet>
+                                                                    #{manyetikKartList.kartNumarasi}
+                                                            </h:column>
+                                                            <h:column >
+                                                                <f:facet  class="success" name="header">Ad Soyad</f:facet>
+                                                                    #{manyetikKartList.adSoyad}
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet  class="active " name="header"> Personel No</f:facet>    
+                                                                    #{manyetikKartList.perid}
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">Veriliş Tarihi</f:facet>
+                                                                    #{manyetikKartList.verilisTarihi}
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">Alış Tarihi</f:facet>
+                                                                    #{manyetikKartList.alisTarihi}
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">Açıklama</f:facet>
+                                                                    #{manyetikKartList.aciklama}
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">Geri AL</f:facet>
+                                                                <h:commandButton value="Geri Al" 
+                                                                                 action="#{manyetikKartListesi.kartGeriAl(manyetikKartList.kartNumarasi)}"
+                                                                                 class="btn btn-sm btn-warning"/>
+                                                            </h:column>
+                                                        </h:dataTable> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading ">Mesai Bilgileri
+                                                <div class="input-group">
+                                                    <h:inputText   class="form-control btn-default" />
+                                                    <div class="input-group-btn btn-sm">
+                                                        <button type="button" class="btn  btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Menu <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            <li><h:commandButton disabled="true"  class="form-control btn-sm btn-default " value="Ara"/></li>
+                                                            <li><h:commandButton class="form-control btn-sm btn-default "  action="#{personelMesaiAtama.personelAtanmisMesaiListele()}" value="Personel Mesai Bilgileri Listele"/></li>
+                                                            <li><h:commandButton disabled="true" class="form-control btn-sm btn-default"  action="#{personelMesaiAtama.mesaiPlanListele()}" value="Mesai Planı Seç"/></li>
+                                                        </ul>
+                                                    </div><!-- /btn-group -->
+                                                </div><!-- /input-group --></div>
+                                            <div class="panel-body">
+                                                <h:dataTable  styleClass="table table-hover" value="#{personelMesaiAtama.personelMesaiPlanListe}" var="pmpl"   >
+                                                    <h:column>
+                                                        <f:facet  class="active " name="header"> Mesai No:</f:facet>    
+                                                            #{pmpl.mesaiid}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  class="active " name="header"> Ad Soyad</f:facet>    
+                                                            #{pmpl.adsoyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  class="active " name="header"> Personel No:</f:facet>    
+                                                            #{pmpl.perId}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  class="success" name="header">Etiket</f:facet>
+                                                            #{pmpl.mesaietiket}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Atama Tarihi</f:facet>
+                                                            #{pmpl.tarih}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Açıklama</f:facet>
+                                                            #{pmpl.bilgi}
+                                                    </h:column>
+                                                </h:dataTable>   
+                                                <label class="label label-success">#{personelIzinIslemleri.aramaBilgilendirme}</label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</html>
+

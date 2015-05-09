@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel  Maaş Ödeme</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <b:navBar brand="Ana Ekran"  brandHref="../index.xhtml"  inverse="true" fixed="top">    
+                <b:navbarLinks>
+
+                    <b:dropMenu value="Personel İşlemleri">
+                        <b:navLink value="Yeni Personel Kayıt İşlemi" href="../Personel_islemleri/kayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="../Personel_islemleri/PersonelHareketKayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel İzin Girişi"  href="../Personel_islemleri/Personel_izin.xhtml"></b:navLink>                        <b:navLink value="İşten Çıkarma-Geri Alma" href="../Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml"></b:navLink>
+                        <b:navLink value="Personel Muhasebe İşlemleri" href="../Personel_islemleri/PersonelMaasHesaplama.xhtml"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Personel Sorgulama" href="../Personel_islemleri/PersonelSorgula.xhtml"></b:navLink>
+                        <b:navLink value="Personel Düzenleme" href="../Personel_islemleri/PersonelDuzenle.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu İşlemler">
+                        <b:navLink value="Toplu Hareket İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Toplu İzin İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Artırımı Kesinti" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink  value="Mesai Programı Oluştur" href="#"></b:navLink>
+
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu Mail İşlemleri">
+                        <b:navLink value="Departmana Mail At" href="#"></b:navLink>
+                        <b:navLink value="Tüm Kuruma Mail At" href="#"></b:navLink>
+                        <b:navLink value="Mail Grubu Oluştur" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Kişiye Özel Mail" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu  value="Raporlar">
+                        <b:navLink header="Personel Raporları"></b:navLink>
+                        <b:navLink value="Manyetik Kart Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel İletişim Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Kurum Departman Bölüm Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Personel Servis Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel Özlük Bilgileri Listesi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink value="Personele Özel Maaş Extresi" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Giriş Çıkış Raporları"></b:navLink>
+                        <b:navLink value="Giriş Yapan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Gelmeyen Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Mesaiye Kalan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Aktif Çalışan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Çalışmayan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Haftalık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="İzin Raporları"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Genel Tanımlar">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Yedekleme">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Sistem Menu">
+                        <b:navLink value="Çıkış" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+
+                </b:navbarLinks>
+
+            </b:navBar>
+        </h:form>
+        <h:form>
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+
+            </div>
+        </h:form>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <h:form>
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">
+                                Mesai Planı Oluşturma 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">
+                                Yeni Mesai Programı
+                            </div>
+
+                            <div class="panel-body"><div class="panel-body">
+                                        <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Etiket</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{mesaiPlanOlusturma.aciklama}"  id="aciklama" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group  col-lg-12">
+                                            <label class="control-label col-lg-12">İş Başı Saat:</label>
+                                            <h:selectOneMenu   value="#{mesaiPlanOlusturma.isBaslangicSaat}" class="form-control  btn-sm btn-default"  >
+                                                <f:selectItem itemValue="08" itemLabel="08:00" > </f:selectItem> 
+                                                <f:selectItem itemValue="09" itemLabel="09:00" > </f:selectItem>
+                                                <f:selectItem itemValue="10" itemLabel="10:00" > </f:selectItem>
+                                                <f:selectItem itemValue="11" itemLabel="11:00" > </f:selectItem>
+                                                <f:selectItem itemValue="12" itemLabel="12:00" > </f:selectItem>
+                                                <f:selectItem itemValue="13" itemLabel="13:00" > </f:selectItem>
+                                                <f:selectItem itemValue="14" itemLabel="14:00" > </f:selectItem>
+                                                <f:selectItem itemValue="15" itemLabel="15:00" > </f:selectItem>
+                                                <f:selectItem itemValue="16" itemLabel="16:00" > </f:selectItem>
+                                                <f:selectItem itemValue="17" itemLabel="17:00" > </f:selectItem>
+                                                <f:selectItem itemValue="18" itemLabel="18:00" > </f:selectItem>
+                                                <f:selectItem itemValue="19" itemLabel="19:00" > </f:selectItem>
+                                                <f:selectItem itemValue="20" itemLabel="20:00" > </f:selectItem>
+                                                <f:selectItem itemValue="21" itemLabel="21:00" > </f:selectItem>
+                                                <f:selectItem itemValue="22" itemLabel="22:00" > </f:selectItem>
+                                                <f:selectItem itemValue="23" itemLabel="23:00" >  </f:selectItem>
+                                                <f:selectItem itemValue="24" itemLabel="24:00" > </f:selectItem>
+                                                <f:selectItem itemValue="01" itemLabel="01:00" > </f:selectItem>
+                                                <f:selectItem itemValue="02" itemLabel="02:00" > </f:selectItem>
+                                                <f:selectItem itemValue="03" itemLabel="03:00" > </f:selectItem>
+                                                <f:selectItem itemValue="04" itemLabel="04:00" > </f:selectItem>
+                                                <f:selectItem itemValue="05" itemLabel="05:00" > </f:selectItem>
+                                                <f:selectItem itemValue="06" itemLabel="05:00" > </f:selectItem>
+                                                <f:selectItem itemValue="07" itemLabel="07:00" > </f:selectItem>
+
+                                            </h:selectOneMenu>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">İş Sonu Saat:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:selectOneMenu  value="#{mesaiPlanOlusturma.isBitisSaat}"  class="form-control btn-sm  btn-default"  >
+                                                    <f:selectItem itemValue="17" itemLabel="17:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="18" itemLabel="18:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="19" itemLabel="19:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="20" itemLabel="20:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="21" itemLabel="21:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="22" itemLabel="22:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="23" itemLabel="23:00" >  </f:selectItem>
+                                                    <f:selectItem itemValue="24" itemLabel="24:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="08" itemLabel="01:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="09" itemLabel="02:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="10" itemLabel="03:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="11" itemLabel="04:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="11" itemLabel="05:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="11" itemLabel="05:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="11" itemLabel="07:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="08" itemLabel="08:00" > </f:selectItem> 
+                                                    <f:selectItem itemValue="09" itemLabel="09:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="10" itemLabel="10:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="11" itemLabel="11:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="12" itemLabel="12:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="13" itemLabel="13:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="14" itemLabel="14:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="15" itemLabel="15:00" > </f:selectItem>
+                                                    <f:selectItem itemValue="16" itemLabel="16:00" > </f:selectItem>
+
+                                                </h:selectOneMenu>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Gecikme Tölerans</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{mesaiPlanOlusturma.gecikmeTolerans}"  id="gecikmetolereans" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Mesai Saat Ücret</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText value="#{mesaiPlanOlusturma.mesaiSaatUcret}"    id="soyad" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Ek Mesai Ücret</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{mesaiPlanOlusturma.ekMesaiUcret}"    id="ekmesaiucret" class="form-control btn-default "/>
+                                            </div>
+                                        </div></div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Mesaj Çalışma Saat</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{mesaiPlanOlusturma.mesaiCalismaSaat}"    id="mesaicalismasaat" class="form-control btn-default "/>
+                                            </div>
+                                        </div></div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2">Onayla:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:commandButton class="btn btm-sm btn-danger  btn-grad"   action="#{mesaiPlanOlusturma.mesaiPlanKaydet()}"  value="Kaydet"/>&nbsp;
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+
+                                            <div class="panel-body">
+                                                <h:outputLabel value="#{mesaiPlanOlusturma.bilgilendirmeMesaj}"/>
+                                            </div>
+                                            <div class="panel-body">
+                                                <h:outputLabel value="#{mesaiPlanOlusturma.uyariMesaj}" />
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">
+                               Mesai Program Listesi:
+
+                            </div>
+                            <div class="panel-body">
+
+                                <h:dataTable styleClass="table table-hover" value="#{mesaiPlanOlusturma.mesaiPlanListesi}" var="mesaiListe"  >
+                                    <h:column>
+                                        <f:facet  class="active " name="header"> Mesai No</f:facet>    
+                                            #{mesaiListe.mesaiPlanId}
+                                    </h:column>
+                                      <h:column >
+                                          <f:facet  class="success" name="header">Etiket</f:facet>
+                                            #{mesaiListe.aciklama}
+
+                                    </h:column>
+                                    <h:column >
+                                        <f:facet  class="success" name="header">İş Başlangıç Saati</f:facet>
+                                            #{mesaiListe.isBaslangicSaat}:00
+
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">İş Bitiş Saat</f:facet>
+                                            #{mesaiListe.isBitisSaat}:00
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Gecikme Tölerans</f:facet>
+                                            #{mesaiListe.gecikmeTolerans}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Mesai Saat Ücreti</f:facet>
+                                            #{mesaiListe.mesaiSaatUcret}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Mesai Çalışma Saati</f:facet>
+                                            #{mesaiListe.mesaiCalismaSaat}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Ek Mesai Ücreti</f:facet>
+                                            #{mesaiListe.ekMesaiUcret}
+                                    </h:column>
+                                </h:dataTable>    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <hr/>
+
+                    <footer>
+                        <p>&copy; Company 2014</p>
+                    </footer>
+                </h:form><!-- /personel kaydi sonu-->
+            </div> </div><!-- /container -->
+    </h:body>
+</html>
+

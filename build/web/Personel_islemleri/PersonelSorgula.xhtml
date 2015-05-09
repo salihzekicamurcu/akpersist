@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel Sorgula</title>
+    </h:head>
+    <h:body>
+        <h:form> 
+            <b:navBar brand="Ana Ekran"  brandHref="../index.xhtml"  inverse="true" fixed="top">    
+                <b:navbarLinks>
+
+                    <b:dropMenu value="Personel İşlemleri">
+                        <b:navLink value="Yeni Personel Kayıt İşlemi" href="../Personel_islemleri/kayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="../Personel_islemleri/PersonelHareketKayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel İzin Girişi"  href="../Personel_islemleri/Personel_izin.xhtml"></b:navLink>                        <b:navLink value="İşten Çıkarma-Geri Alma" href="../Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml"></b:navLink>
+                        <b:navLink value="Personel Muhasebe İşlemleri" href="../Personel_islemleri/PersonelMaasHesaplama.xhtml"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Personel Sorgulama" href="../Personel_islemleri/PersonelSorgula.xhtml"></b:navLink>
+                        <b:navLink value="Personel Düzenleme" href="../Personel_islemleri/PersonelDuzenle.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu İşlemler">
+                        <b:navLink value="Toplu Hareket İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Toplu İzin İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Artırımı Kesinti" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink  value="Mesai Programı Oluştur" href="#"></b:navLink>
+
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu Mail İşlemleri">
+                        <b:navLink value="Departmana Mail At" href="#"></b:navLink>
+                        <b:navLink value="Tüm Kuruma Mail At" href="#"></b:navLink>
+                        <b:navLink value="Mail Grubu Oluştur" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Kişiye Özel Mail" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu  value="Raporlar">
+                        <b:navLink header="Personel Raporları"></b:navLink>
+                        <b:navLink value="Manyetik Kart Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel İletişim Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Kurum Departman Bölüm Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Personel Servis Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel Özlük Bilgileri Listesi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink value="Personele Özel Maaş Extresi" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Giriş Çıkış Raporları"></b:navLink>
+                        <b:navLink value="Giriş Yapan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Gelmeyen Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Mesaiye Kalan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Aktif Çalışan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Çalışmayan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Haftalık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="İzin Raporları"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Genel Tanımlar">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Yedekleme">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Sistem Menu">
+                        <b:navLink value="Çıkış" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+
+                </b:navbarLinks>
+
+            </b:navBar>
+        </h:form>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <h:form>
+            <div class="jumbotron ">
+                <div class="container ">
+
+                    <h2>Personel Sorgulama</h2>
+                    <div class="row col-lg-12">
+
+
+
+
+                        <div class="form-group col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                Uyarılar:
+
+                                <h:outputLabel   id="uyari" value="#{personelSorgulama.aramaUyari}"/>
+                            </div></div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading ">
+                                Listeler
+                                <div class="input-group">
+                                    <div class="form-group col-lg-3">
+
+                                        <label class="control-label">Personel No:</label>
+                                        <h:inputText  value="#{personelSorgulama.perID}"  class="form-control btn-default "></h:inputText>
+
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label class="control-label ">Ad  </label>
+                                        <h:inputText  value="#{personelSorgulama.ad}"  class="form-control btn-default"></h:inputText>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+
+                                        <label class="control-label ">TC Kimlik No:</label>
+                                        <h:inputText  value="#{personelSorgulama.TC_KIMLIK_NO}"  class="form-control btn-default "></h:inputText>
+
+                                    </div>
+                              
+                                    <div class="form-group col-lg-3">
+
+                                        <label class="control-label ">Cep Telefonu </label>
+                                        <h:inputText  value="#{personelSorgulama.cep_Telefon}"  class="form-control btn-default "></h:inputText>
+                                    </div>
+                          
+                                    <div class="input-group-btn btn-sm">
+                                        <button type="button" class="btn  btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Menu <span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <li> <h:commandButton action="#{personelSorgulama.arama()}"
+                                                                  styleClass="btn btn-default col-lg-12  " 
+                                                                  value="Ara"/> </li>
+                                            <li> <h:commandButton action="#{personelSorgulama.tumunuGetir()}"
+                                                                  styleClass="btn btn-default  col-lg-12"
+                                                                  value="Tümünü Listele"/></li>
+
+
+                                        </ul>
+                                    </div><!-- /btn-group -->
+                                </div><!-- /input-group -->
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">Genel Bilgilere Göre Listeleme</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <h:dataTable styleClass="table table-hover" value="#{personelSorgulama.personelListesi}" var="liste"  >
+                                                    <h:column>
+                                                        <f:facet  class="success" name="header"> Personel No</f:facet>
+                                                            #{liste.perID}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  name="header">Kart No</f:facet>
+                                                            #{liste.kartNo}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  name="header">Ad</f:facet>
+                                                            #{liste.ad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Soyad</f:facet>
+                                                            #{liste.soyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">T.C Kimlik No</f:facet>
+                                                            #{liste.TC_KIMLIK_NO}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Cinsiyet</f:facet>
+                                                            #{liste.cinsiyet}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Sigorta No</f:facet>
+                                                            #{liste.SIGORTA_NO}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">İş Durumu</f:facet>
+                                                            #{liste.IS_DURUMU}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Kurum</f:facet>
+                                                            #{liste.KURUM_ID}
+                                                    </h:column>
+                                                </h:dataTable>     </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">İletişim Bilgierine Göre Listeleme</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <h:dataTable styleClass="table table-hover" value="#{personelSorgulama.personelListesi}" var="liste"  >
+                                                    <h:column>
+                                                        <f:facet  name="header"> Personel No</f:facet>
+                                                            #{liste.perID}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  name="header">Ad</f:facet>
+                                                            #{liste.ad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Soyad</f:facet>
+                                                            #{liste.soyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Cep Telefon</f:facet>
+                                                            #{liste.cep_Telefon}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Ev Telefon</f:facet>
+                                                            #{liste.ev_Telefon}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">İş Telefon</f:facet>
+                                                            #{liste.is_Telefon}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Mail Adresi</f:facet>
+                                                            #{liste.mail_Adresi}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet  name="header">Web Sayfası</f:facet>
+                                                            #{liste.web}
+                                                    </h:column>
+                                                </h:dataTable>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseadres" class="collapsed">Adres Bilgilerine Göre Listeleme</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseadres" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <h:dataTable styleClass="table table-hover" value="#{personelSorgulama.personelListesi}" var="liste"  >
+                                                    <h:column>
+                                                        <f:facet  name="header"> Personel No</f:facet>
+                                                            #{liste.perID}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  name="header">Ad</f:facet>
+                                                            #{liste.ad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Soyad</f:facet>
+                                                            #{liste.soyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">İlçe</f:facet>
+                                                            #{liste.ilce}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">İL</f:facet>
+                                                            #{liste.IL}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Adres</f:facet>
+                                                            #{liste.adres}
+                                                    </h:column>
+
+
+                                                </h:dataTable>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseKisiselBilgiler" class="collapsed">Kişisel Bilgilerine Göre Listeleme</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseKisiselBilgiler" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <h:dataTable styleClass="table table-hover" value="#{personelSorgulama.personelListesi}" var="liste"  >
+                                                    <h:column>
+                                                        <f:facet  name="header"> Personel No</f:facet>
+                                                            #{liste.perID}
+                                                    </h:column>
+                                                    <h:column >
+                                                        <f:facet  name="header">Ad</f:facet>
+                                                            #{liste.ad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Soyad</f:facet>
+                                                            #{liste.soyad}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Kan Gurubu</f:facet>
+                                                            #{liste.kan_Grubu}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Medeni Durum</f:facet>
+                                                            #{liste.medeni_Durum}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Beden No</f:facet>
+                                                            #{liste.giysi_Beden}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Ayakkabı No</f:facet>
+                                                            #{liste.ayakkabi_No}
+                                                    </h:column>
+                                                    <h:column>
+                                                        <f:facet name="header">Özel Durum</f:facet>
+                                                            #{liste.ozel_Durum}
+                                                    </h:column>
+
+
+                                                </h:dataTable>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse44" class="collapsed">Mesai Bilgilerine Göre Listeleme</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse44" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                mesai bilgileri </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseYeniKategori" class="collapsed">Yeni Kategori</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseYeniKategori" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                yeni kategori
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr/> 
+                <footer>
+                    <p>&copy; Company 2014</p>
+                </footer>
+            </div> <!-- /container -->
+        </h:form>
+
+    </h:body>
+</html>
+

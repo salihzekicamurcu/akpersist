@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="Personel_islemleri/PersonelDuzenle.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="GirisSayfasi.xhtml" x="300" y="113" zoom="false"/>
+        <Node id="Personel_islemleri/Personel_izin.xhtml" x="550" y="238" zoom="true"/>
+        <Node id="Toplu_Islemler/MesaiKayit.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelMuhasebeGecmisi.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="Personel_islemleri/kayit.xhtml" x="551" y="198" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelHareketKayit.xhtml" x="549" y="283" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelSorgula.xhtml" x="549" y="413" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelMaasHesaplama.xhtml" x="545" y="371" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelMaasOdeme.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="Personel_islemleri/PersonelMaasProgramiOlustur.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="index.xhtml" x="125" y="257" zoom="true"/>
+        <Node id="Toplu_Islemler/MesaiPlaniOlusturma.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml" x="546" y="329" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

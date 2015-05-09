@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel  Maaş Programı Oluştur</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <b:navBar brand="Ana Ekran"  brandHref="../index.xhtml"  inverse="true" fixed="top">    
+                <b:navbarLinks>
+
+                    <b:dropMenu value="Personel İşlemleri">
+                        <b:navLink value="Yeni Personel Kayıt İşlemi" href="../Personel_islemleri/kayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="../Personel_islemleri/PersonelHareketKayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel İzin Girişi"  href="../Personel_islemleri/Personel_izin.xhtml"></b:navLink>                        <b:navLink value="İşten Çıkarma-Geri Alma" href="../Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml"></b:navLink>
+                        <b:navLink value="Personel Muhasebe İşlemleri" href="../Personel_islemleri/PersonelMaasHesaplama.xhtml"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Personel Sorgulama" href="../Personel_islemleri/PersonelSorgula.xhtml"></b:navLink>
+                        <b:navLink value="Personel Düzenleme" href="../Personel_islemleri/PersonelDuzenle.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu İşlemler">
+                        <b:navLink value="Toplu Hareket İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Toplu İzin İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Artırımı Kesinti" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink  value="Mesai Programı Oluştur" href="#"></b:navLink>
+
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu Mail İşlemleri">
+                        <b:navLink value="Departmana Mail At" href="#"></b:navLink>
+                        <b:navLink value="Tüm Kuruma Mail At" href="#"></b:navLink>
+                        <b:navLink value="Mail Grubu Oluştur" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Kişiye Özel Mail" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu  value="Raporlar">
+                        <b:navLink header="Personel Raporları"></b:navLink>
+                        <b:navLink value="Manyetik Kart Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel İletişim Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Kurum Departman Bölüm Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Personel Servis Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel Özlük Bilgileri Listesi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink value="Personele Özel Maaş Extresi" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Giriş Çıkış Raporları"></b:navLink>
+                        <b:navLink value="Giriş Yapan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Gelmeyen Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Mesaiye Kalan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Aktif Çalışan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Çalışmayan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Haftalık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="İzin Raporları"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Genel Tanımlar">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Yedekleme">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Sistem Menu">
+                        <b:navLink value="Çıkış" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+
+                </b:navbarLinks>
+
+            </b:navBar>
+        </h:form>
+        <h:form>
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+        
+                    <h2>Personel Maaş Programı Oluşturma Ekranı</h2>
+                    <div class="row col-lg-12">
+                        <div class="col-lg-4 ">
+                            <label class="control-label">Personel No:</label>
+                            <h:inputText  value="#{personelMaasProgramiOlustur.perID}"  class="form-control btn-warning col-lg-4"></h:inputText>#{personelMaasProgramiOlustur.uyariMesaj}
+
+
+                            <div class="form-group">
+                                <h:commandButton
+                                    action="#{personelMaasProgramiOlustur.personelBilgileriYukle()}"
+                                    styleClass="btn btn-sm  btn-danger col-lg-6 " 
+                                    value="Maaş Programı Oluştur"/>
+                            </div>&nbsp;
+                            <div class="btn-group">
+                                    <button type="button" class="btn btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        Muhasebe Menü <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="../Personel_islemleri/PersonelMaasProgramiOlustur.xhtml">Maaş Programı Oluştur</a></li>
+                                        <li><a href="../Personel_islemleri/PersonelMuhasebeGecmisi.xhtml" >Personel Ödeme Geçmişi</a></li>
+                                        <li><a href="../Personel_islemleri/PersonelMaasOdeme.xhtml">Ödeme Yap</a></li>
+
+                                    </ul>
+                                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </h:form>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <h:form>
+
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">
+                                Maaş Programı Oluştur
+                            </div>
+
+                            <div class="panel-body"><div class="panel-body">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Personel No:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText   value="#{personelMaasProgramiOlustur.perID}" id="personelno" class="form-control btn-danger"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Ad:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{personelMaasProgramiOlustur.ad}" id="ad" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Soyad:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText   value="#{personelMaasProgramiOlustur.soyad}" id="soyad" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Ay:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:selectOneListbox  value="#{personelMaasProgramiOlustur.donem}"  class="form-control btn-default" size="12" >
+                                                    <f:selectItem itemValue="1" itemLabel="1" />
+                                                    <f:selectItem itemValue="2" itemLabel="2" />
+                                                    <f:selectItem itemValue="3" itemLabel="3" />
+                                                    <f:selectItem itemValue="4" itemLabel="4" />
+                                                    <f:selectItem itemValue="5" itemLabel="5" />
+                                                    <f:selectItem itemValue="6" itemLabel="6" />
+                                                    <f:selectItem itemValue="7" itemLabel="7" />
+                                                    <f:selectItem itemValue="8" itemLabel="8" />
+                                                    <f:selectItem itemValue="9" itemLabel="9" />
+                                                    <f:selectItem itemValue="10" itemLabel="10" />
+                                                    <f:selectItem itemValue="11" itemLabel="11" />
+                                                    <f:selectItem itemValue="12" itemLabel="12" />
+                                                </h:selectOneListbox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Maas:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText  value="#{personelMaasProgramiOlustur.maas}" id="maas" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Avans:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText   value="#{personelMaasProgramiOlustur.avans}" id="avans" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Kesinti</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText value="#{personelMaasProgramiOlustur.kesinti}"  id="kesinti" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Ek Mesai:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText value="#{personelMaasProgramiOlustur.ekMesai}"   id="ekmesai" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12">Toplam:</label>
+                                            <div class="col-lg-12 ">
+                                                <h:inputText value="#{personelMaasProgramiOlustur.netUcret}"  id="toplam" class="form-control btn-default "/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-12"></label>
+                                            <div class="col-lg-12 ">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-lg-6 ">
+                                                <h:commandButton  action="#{personelMaasProgramiOlustur.personelMaasHesapla()}" class="btn  btn-sm  btn-warning  btn-grad"    value="Hesapla"/>&nbsp;
+                                                <h:commandButton action="#{personelMaasProgramiOlustur.personelMaasProgramiKaydet()}" class="btn  btn-sm  btn-danger  btn-grad"    value="Kaydet"/>&nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div  class="panel panel-warning">
+                                        <div class="panel-body">
+                                            Bilgilendirme Mesajları
+                                            <h:outputLabel value="#{personelMaasProgramiOlustur.bilgilendirmeMesaj}"/>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-danger">
+                                        <div class="panel-body">
+                                            Uyarılar:
+                                            <h:outputLabel value="#{personelMaasProgramiOlustur.uyariMesaj}"/>
+                                        </div>
+                                    </div>
+                                </div></div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading ">
+                                Maaş Programi:
+                                #{personelMaasProgramiOlustur.ad}  #{personelMaasProgramiOlustur.soyad}
+                            </div>
+                            <div class="panel-body">
+
+                                <h:dataTable styleClass="table table-hover" value="#{personelMaasProgramiOlustur.personelMaasProgramListesi}" var="maasListe"  >
+                                    <h:column>
+                                        <f:facet  class="active " name="header"> Ay</f:facet>    
+                                            #{maasListe.donem}
+                                    </h:column>
+                                    <h:column >
+                                        <f:facet  class="success" name="header">Maaş</f:facet>
+                                            #{maasListe.maas}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Avans</f:facet>
+                                            #{maasListe.avans}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Kesinti</f:facet>
+                                            #{maasListe.kesinti}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Ek Mesai</f:facet>
+                                            #{maasListe.ekMesai}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Toplam</f:facet>
+                                            #{maasListe.toplam}
+                                    </h:column>
+                                </h:dataTable>    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr/>
+
+                    <footer>
+                        <p>&copy; Company 2014</p>
+                    </footer>
+                </h:form><!-- /personel kaydi sonu-->
+            </div> </div><!-- /container -->
+    </h:body>
+</html>
+

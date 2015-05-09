@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <navigation-rule>
+        <description>index sayfası yonlendirmeleri</description>
+        <from-view-id>/index.xhtml</from-view-id>
+    </navigation-rule>
+    <navigation-rule>
+        <description>sistem login durumları</description>
+        <from-view-id>/GirisSayfasi.xhtml</from-view-id>
+        <navigation-case>
+            <description>sisteme giris yapabilir</description>
+            <from-outcome>login_ol</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <description>kart okumtma ekrani</description>
+            <from-outcome>personel_giris</from-outcome>
+            <to-view-id>/PersonelGiris.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/Personel_islemleri/kayit.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>KaydiBitir</from-outcome>
+            <to-view-id>/Personel_islemleri/kayit.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+      <navigation-rule>
+        <from-view-id>/Personel_islemleri/PersonelSorgula.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>arama</from-outcome>
+            <to-view-id>/Personel_islemleri/kayit.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+<managed-bean>
+    <managed-bean-name>currentDate</managed-bean-name>
+    <managed-bean-class>java.util.Date</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+
+    <managed-bean>
+        <description>yeni personel kayit islemi  yapan bean</description>
+        <managed-bean-name>personelKayit</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelKayitIslemleri</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>personel bilgileri 
+perid,tc no,adsoyad durumuna göre arar</description>
+        <managed-bean-name>personelSorgulama</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelAramaIslemleri</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>personelDuzenlemeIslemleri</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelDuzenlemeIslemleri</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>persone maas programi olusturmak icin</description>
+        <managed-bean-name>personelMaasProgramiOlustur</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelMaasProgramiOlustur</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>personelMaasOdemeIslemleri</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelMaasOdemeIslemleri</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>personelMuhasebeGecmisi</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelMuhasebeGecmisi</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>personel izin işlemleri </description>
+        <managed-bean-name>personelIzinIslemleri</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelIzinIslemleri</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <description>mesai plan oluşturma</description>
+        <managed-bean-name>mesaiPlanOlusturma</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.topluIslemlerBean.MesaiPlanOlusturma</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>personele Mesai atama</description>
+        <managed-bean-name>personelMesaiAtama</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.personelBean.PersonelMesaiAtama</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>manyetikKartListesi</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.raporlarBean.ManyetikKartListesi</managed-bean-class>
+    
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <description>personel mesai giriş çıkış işlemleri</description>
+        <managed-bean-name>personelGirisCikis</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.topluIslemlerBean.PersonelGirisCikis</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>anaSayfaBean</managed-bean-name>
+        <managed-bean-class>com.personelyonetimsistemi.topluIslemlerBean.AnaSayfaBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+</faces-config>

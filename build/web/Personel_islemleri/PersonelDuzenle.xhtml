@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <h:outputStylesheet name="bootstrap/css/bootstrap.min.css" />
+        <h:outputStylesheet name="bootstrap/css/bootstrap-theme.min.css" />
+        <title>Personel Düzenle</title>
+    </h:head>
+    <h:body>
+        <h:form> 
+            <b:navBar brand="Ana Ekran"  brandHref="../index.xhtml"  inverse="true" fixed="top">    
+                <b:navbarLinks>
+
+                    <b:dropMenu value="Personel İşlemleri">
+                        <b:navLink value="Yeni Personel Kayıt İşlemi" href="../Personel_islemleri/kayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="../Personel_islemleri/PersonelHareketKayit.xhtml" ></b:navLink>
+                        <b:navLink value="Personel İzin Girişi"  href="../Personel_islemleri/Personel_izin.xhtml"></b:navLink>                        <b:navLink value="İşten Çıkarma-Geri Alma" href="../Personel_islemleri/IstenCikarmaIseGeriAlma.xhtml"></b:navLink>
+                        <b:navLink value="Personel Muhasebe İşlemleri" href="../Personel_islemleri/PersonelMaasHesaplama.xhtml"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Personel Sorgulama" href="../Personel_islemleri/PersonelSorgula.xhtml"></b:navLink>
+                        <b:navLink value="Personel Düzenleme" href="../Personel_islemleri/PersonelDuzenle.xhtml"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu İşlemler">
+                        <b:navLink value="Toplu Hareket İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Toplu İzin İşlemi Tanımla" href="#"></b:navLink>
+                        <b:navLink value="Personel Hareket Kayıt İşlemi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Artırımı Kesinti" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink  value="Mesai Programı Oluştur" href="#"></b:navLink>
+
+                    </b:dropMenu>
+                    <b:dropMenu value="Toplu Mail İşlemleri">
+                        <b:navLink value="Departmana Mail At" href="#"></b:navLink>
+                        <b:navLink value="Tüm Kuruma Mail At" href="#"></b:navLink>
+                        <b:navLink value="Mail Grubu Oluştur" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink value="Kişiye Özel Mail" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu  value="Raporlar">
+                        <b:navLink header="Personel Raporları"></b:navLink>
+                        <b:navLink value="Manyetik Kart Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel İletişim Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Kurum Departman Bölüm Bilgileri" href="#"></b:navLink>
+                        <b:navLink value="Personel Servis Listesi" href="#"></b:navLink>
+                        <b:navLink value="Personel Özlük Bilgileri Listesi" href="#"></b:navLink>
+                        <b:navLink value="Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink value="Personele Özel Maaş Extresi" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Giriş Çıkış Raporları"></b:navLink>
+                        <b:navLink value="Giriş Yapan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Gelmeyen Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Mesaiye Kalan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Aktif Çalışan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Anlık Çalışmayan Personel Listesi" href="#"></b:navLink>
+                        <b:navLink value="Haftalık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Devam Listesi" href="#"></b:navLink>
+                        <b:navLink value="Aylık Maaş Dökümleri" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="İzin Raporları"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Genel Tanımlar">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Yedekleme">
+                        <b:navLink value="Action" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+                    <b:dropMenu   value="Sistem Menu">
+                        <b:navLink value="Çıkış" href="#"></b:navLink>
+                        <b:navLink value="Another action" href="#"></b:navLink>
+                        <b:navLink value="Something else here" href="#"></b:navLink>
+                        <b:navLink></b:navLink>
+                        <b:navLink header="Nav header"></b:navLink>
+                        <b:navLink value="Separated link" href="#"></b:navLink>
+                        <b:navLink value="One more separated link" href="#"></b:navLink>
+                    </b:dropMenu>
+
+                </b:navbarLinks>
+
+            </b:navBar>
+        </h:form>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <h:form>
+            <div class="jumbotron ">
+                <div class="container ">
+
+                    <h2>Personel Düzenleme</h2>
+                    <div class="row col-lg-12">
+                        <div class="form-group col-lg-3">
+                            <div class="col-lg-12 ">
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                Uyarılar:
+                                <h:outputLabel value="#{personelDuzenlemeIslemleri.duzenlemeUyari}"/>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading ">
+                                <div class="input-group">
+                                    <label class="control-label">Personel No:</label>
+                                    <h:inputText  value="#{personelDuzenlemeIslemleri.perID}" class="form-control col-lg-4 btn-default" />
+                                    <div class="input-group-btn btn-sm">
+                                        <h:commandButton action="#{personelDuzenlemeIslemleri.duzenlemeBilgiArama()}"
+                                                         styleClass="btn  btn-sm btn-success  " 
+                                                         value="Ara"/>
+                                    </div><!-- /btn-group -->
+                                </div><!-- /input-group -->
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">Personel Bilgileri</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+
+                                                <div class="box">
+                                                    <div id="collapseOne" class="accordion-body collapse in body">
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-2">Kart No:</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:inputText  value="#{personelDuzenlemeIslemleri.kartNo}" id="kartno" class="form-control btn-default"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-2">Adi:(*)</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:inputText value="#{personelDuzenlemeIslemleri.ad}"  id="ad" class="form-control btn-default"></h:inputText>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="  control-label col-lg-2">Soyadı:(*)</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:inputText  value="#{personelDuzenlemeIslemleri.soyad}" id="soyad" class="form-control btn-default"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-2">T.C Kimlik No:(*)</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:inputText value="#{personelDuzenlemeIslemleri.TC_KIMLIK_NO}"  id="kimlikno" class="form-control btn-danger"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-2">Sigorta No:</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:inputText value="#{personelDuzenlemeIslemleri.SIGORTA_NO}" id="sigortano" class="form-control btn-default"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-4">İş Durumu:#{personelDuzenlemeIslemleri.IS_DURUMU}</label>
+                                                                <div class="col-lg-12 ">
+                                                                    <h:selectOneRadio class="form-control" value="#{personelDuzenlemeIslemleri.IS_DURUMU}">
+                                                                        <f:selectItem  id="secenek1" itemValue="Aktif" itemLabel="Aktif"/>
+                                                                        <f:selectItem  id="secenek2"  itemValue="Pasif" itemLabel="Pasif"/>
+                                                                    </h:selectOneRadio>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-lg-4">Kurum:#{personelDuzenlemeIslemleri.KURUM_ID}
+                                                                </label>
+                                                                <div class="col-lg-12 ">
+
+                                                                    <h:selectOneListbox  value="#{personelDuzenlemeIslemleri.KURUM_ID}" class="form-control btn-default" size="3" >
+                                                                        <f:selectItem itemValue="Muhasebe" itemLabel="Muhasebe" />
+                                                                        <f:selectItem itemValue="İnsan Kaynakları" itemLabel="İnsan Kaynakları" />
+                                                                    </h:selectOneListbox>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">Kişisel Bilgileri</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Ogrenim Türü:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText value="#{personelDuzenlemeIslemleri.ogrenim_Turu}" id="ogrenimturu" class="form-control btn-default"/>
+                                                        </div>
+                                                    </div>
+                                                </div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Mezun Oldugu Okul:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText value="#{personelDuzenlemeIslemleri.mezun_Oldugu_Okul}" id="okul" class="form-control btn-default"/>
+                                                        </div>
+                                                    </div></div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-4">Kan Grubu:#{personelDuzenlemeIslemleri.kan_Grubu}</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:selectOneListbox  value="#{personelDuzenlemeIslemleri.kan_Grubu}" class="form-control btn-default" size="8" >
+                                                                <f:selectItem itemValue="AB+" itemLabel="AB+" />
+                                                                <f:selectItem itemValue="AB-" itemLabel="AB-" />
+                                                                <f:selectItem itemValue="A+" itemLabel="A+" />
+                                                                <f:selectItem itemValue="B+" itemLabel="B+" />
+                                                                <f:selectItem itemValue="A-" itemLabel="A-" />
+                                                                <f:selectItem itemValue="B-" itemLabel="B-" />
+                                                                <f:selectItem itemValue="0+" itemLabel="0+" />
+                                                                <f:selectItem itemValue="0-" itemLabel="0-" />
+                                                            </h:selectOneListbox>
+
+
+                                                        </div>
+                                                    </div></div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-4">Cinsiyet:#{personelDuzenlemeIslemleri.cinsiyet}</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:selectOneRadio class="form-control" value="#{personelDuzenlemeIslemleri.cinsiyet}">
+                                                                <f:selectItem  id="Bay" itemLabel="Bay"/>
+                                                                <f:selectItem  id="Bayan" itemLabel="Bayan"/>
+                                                            </h:selectOneRadio>
+
+                                                        </div>
+                                                    </div></div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-4">Medeni Durum:#{personelDuzenlemeIslemleri.medeni_Durum}</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:selectOneMenu value="#{personelDuzenlemeIslemleri.medeni_Durum}" id="medenidurum" class="form-control btn-default" >
+                                                                <f:selectItem
+                                                                    itemValue="Evli" itemLabel="Evli" >
+                                                                </f:selectItem>
+                                                                <f:selectItem
+                                                                    itemValue="Bekar" itemLabel="Bekar" >
+                                                                </f:selectItem>  
+                                                                <f:selectItem
+                                                                    itemValue="Dul" itemLabel="Dul" >
+                                                                </f:selectItem>  
+                                                                <f:selectItem
+                                                                    itemValue="Boşanmış" itemLabel="Boşanmış" >
+                                                                </f:selectItem>     
+                                                            </h:selectOneMenu>
+
+                                                        </div>
+                                                    </div></div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-4">Giysi Bedeni:#{personelDuzenlemeIslemleri.giysi_Beden}</label>
+                                                        <div class="col-lg-12 ">
+
+                                                            <h:selectOneMenu value="#{personelDuzenlemeIslemleri.giysi_Beden}"  class="form-control btn-default" >
+                                                                <f:selectItem
+                                                                    itemValue="XS" itemLabel="XS" >
+                                                                </f:selectItem>
+                                                                <f:selectItem
+                                                                    itemValue="S" itemLabel="S" >
+                                                                </f:selectItem>  
+                                                                <f:selectItem
+                                                                    itemValue="M" itemLabel="M" >
+                                                                </f:selectItem>
+                                                                <f:selectItem
+                                                                    itemValue="L" itemLabel="L" >
+                                                                </f:selectItem>
+                                                                <f:selectItem
+                                                                    itemValue="XL" itemLabel="XL" >
+                                                                </f:selectItem>
+                                                                <f:selectItem
+                                                                    itemValue="XXL" itemLabel="XXL" >
+                                                                </f:selectItem>
+                                                            </h:selectOneMenu>
+                                                        </div>
+                                                    </div></div><div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-4">Ayakkabı No:#{personelDuzenlemeIslemleri.ayakkabi_No}</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText value="#{personelDuzenlemeIslemleri.ayakkabi_No}" id="ayakkabino" class="form-control btn-default" >
+                                                            </h:inputText>
+                                                        </div>
+                                                    </div></div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Özel Durum:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputTextarea  rows="3" cols="2" value="#{personelDuzenlemeIslemleri.ozel_Durum}"  id="ozeldurum" class="form-control"/>
+
+                                                        </div>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">İletişim Bilgileri</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Adres:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputTextarea  rows="3" cols="2"  value="#{personelDuzenlemeIslemleri.adres}" id="adres" class="form-control btn-danger"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">İlçe:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText  value="#{personelDuzenlemeIslemleri.ilce}" id="ilce" class="form-control btn-default" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">İL:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText  value="#{personelDuzenlemeIslemleri.IL}" id="il" class="form-control btn-default"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">İş Telefon:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText value="#{personelDuzenlemeIslemleri.is_Telefon}"   id="istelefon" class="form-control btn-default"  maxlength="11"  />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Ev Telefon:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText   value="#{personelDuzenlemeIslemleri.ev_Telefon}"  id="evtelefon" class="form-control" maxlength="11"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Cep Telefon:(*)</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText   value="#{personelDuzenlemeIslemleri.cep_Telefon}"  id="ceptelefon" class="form-control btn-default" maxlength="11"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Mail Adresi:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText   value="#{personelDuzenlemeIslemleri.mail_Adresi}"  id="mailadresi" class="form-control btn-default" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">Web Sistesi:</label>
+                                                        <div class="col-lg-12 ">
+                                                            <h:inputText   value="#{personelDuzenlemeIslemleri.web}"  id="websitesi" class="form-control btn-default"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">Sonlandır</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <h:commandButton  class="btn btn-warning "  action="#{personelDuzenlemeIslemleri.kontrolEt()}"  value="Kontrol Et"/>&nbsp;
+
+                                            <h:commandButton id="kaydiBitir"  class="btn btn-danger " action="#{personelDuzenlemeIslemleri.duzenle()}" value="Duzenle"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="panel panel-warning">
+                                    <div class="panel-body">
+                                        Bilgilendirme Mesajları
+                                        <h:outputLabel  value="#{personelDuzenlemeIslemleri.sonuc}"/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr/> 
+
+                <footer>
+                    <p>&copy; Company 2014</p>
+                </footer>
+
+            </div> <!-- /container -->
+        </h:form>
+
+
+
+    </h:body>
+</html>
+
